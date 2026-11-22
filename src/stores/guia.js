@@ -3,13 +3,13 @@ import { defineStore } from 'pinia'
 import { CHAPTERS } from '@/data/chapters'
 
 const STORAGE_PROGRESS_KEY = 'grid_manual_progress_v1'
-const STORAGE_AUTHORS_KEY = 'grid_manual_authors_v1'
+const STORAGE_AUTHORS_KEY = 'grid_manual_authors_v2'
 
 const DEFAULT_AUTHORS = {
-  memberOne: 'Integrante 01 (editar)',
-  memberTwo: 'Integrante 02 (editar)',
-  course: 'Desenvolvimento Web · Vue 3',
-  edition: 'Edição Acadêmica · 2026'
+  memberOne: 'Pedro Augusto Lombardi da Costa',
+  memberTwo: 'Luana Gabrielle Ferreira Guedes Paes',
+  course: 'Análise e Desenvolvimento de Sistemas · Frameworks Front-end',
+  edition: '2º semestre · 2026'
 }
 
 function loadJson(key, fallback) {

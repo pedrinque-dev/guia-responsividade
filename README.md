@@ -120,9 +120,8 @@ O repositório já inclui fallback SPA para o **Vue Router** (`history mode`) pr
 
 ## Integrantes da Dupla
 
-Edite os campos abaixo (e também diretamente na ficha técnica da capa da aplicação, caso deseje personalizar para a apresentação):
-
-- **Integrante 01:** [Nome do(a) integrante 01]
-- **Integrante 02:** [Nome do(a) integrante 02]
-- **Curso / Disciplina:** [Informar curso e disciplina]
-- **Semestre / Ano:** 2026
+- **Integrante 01:** Pedro Augusto Lombardi da Costa
+- **Integrante 02:** Luana Gabrielle Ferreira Guedes Paes
+- **Curso:** Análise e Desenvolvimento de Sistemas
+- **Disciplina:** Frameworks Front-end
+- **Período:** 2º semestre · 2026
