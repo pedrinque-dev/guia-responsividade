@@ -1,4 +1,5 @@
 <script setup>
+import ApiMediaShowcase from '@/components/ApiMediaShowcase.vue'
 import CodeExample from '@/components/CodeExample.vue'
 import GuidingQuestion from '@/components/GuidingQuestion.vue'
 import ReferenceList from '@/components/ReferenceList.vue'
@@ -175,6 +176,8 @@ const sources = [
     </section>
 
     <ImageLab />
+
+    <ApiMediaShowcase />
 
     <GuidingQuestion
       number="04"
