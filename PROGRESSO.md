@@ -12,12 +12,18 @@ Registro progressivo das etapas concluídas no desenvolvimento do **Guia de Resp
   - Inicialização do projeto Vue 3 com Vite, Vue Router e Pinia em JavaScript puro e validação do primeiro build.
 
 ## Etapa 02 — Identidade Visual e Estrutura
+- **Status:** Concluída (`0b8c47f` enviado para `origin/main`)
+- **Atividades realizadas:**
+  - Criação dos design tokens CSS em `:root` (`src/styles/tokens.css`) com paleta editorial `GRID — Manual de Campo`.
+  - Criação do estilo base mobile-first (`src/styles/global.css`) com `min-width`, foco visível para teclado e `skip-link`.
+  - Implementação da store Pinia `useGuiaStore` (`src/stores/guia.js`) e dos componentes reutilizáveis (`AppHeader`, `AppSidebar`, `SectionNavigation`, `ViewportBadge`, `CodeExample`, `LabContainer`, `GuidingQuestion`, `ReferenceList`).
+  - Configuração das rotas sob demanda em `src/router/index.js` e desenvolvimento da capa editorial em `HomeView.vue`.
+
+## Etapa 03 — Conteúdo Técnico
 - **Status:** Concluída
 - **Atividades realizadas:**
-  - Criação dos design tokens CSS em `:root` (`src/styles/tokens.css`) com paleta editorial `GRID — Manual de Campo` (Grafite `#171717`, Papel `#F5F1E8`, Laranja queimado `#E87836`, Cinza `#A6A49D`), escala tipográfica e espaçamentos em `rem`.
-  - Criação do estilo base mobile-first (`src/styles/global.css`) com `min-width`, foco visível para teclado e `skip-link`.
-  - Implementação da store Pinia `useGuiaStore` (`src/stores/guia.js`) para progresso de leitura, ficha técnica editável da dupla, menu mobile e monitoramento reativo de viewport/breakpoint.
-  - Implementação dos componentes estruturais e editoriais reutilizáveis: `AppHeader.vue`, `AppSidebar.vue`, `SectionNavigation.vue`, `ViewportBadge.vue`, `CodeExample.vue`, `LabContainer.vue`, `GuidingQuestion.vue` e `ReferenceList.vue`.
-  - Configuração de todas as rotas com carregamento sob demanda (lazy routes) em `src/router/index.js`.
-  - Criação da capa editorial completa em `HomeView.vue` com diagrama multi-largura interativo, progresso de leitura, índice de capítulos e ficha técnica editável da dupla.
-- **Pendências:** Avançar para a Etapa 03 (Conteúdo Técnico completo das cinco seções, exemplos de código comentados na interface, respostas fundamentadas às perguntas-guia e referências oficiais).
+  - Implementação integral das cinco seções obrigatórias: `ResponsividadeView.vue`, `UnidadesView.vue`, `LayoutsView.vue`, `ImagensView.vue` e `VueView.vue`.
+  - Explicações acessíveis e rigorosas em português brasileiro, exemplos de código anotados linha a linha via `CodeExample.vue` (sem comentários no código-fonte real), diagramas próprios (comparação de meta viewport, demonstração visual do cálculo de `464px` em CSS Grid, esquema de CLS).
+  - Respostas explícitas e fundamentadas para todas as cinco perguntas-guia obrigatórias.
+  - Inclusão de referências oficiais verificadas (MDN Web Docs, Vue.js, Vue Router, web.dev e CSS-Tricks) com retorno HTTP 200 confirmado.
+- **Pendências:** Avançar para a Etapa 04 (Implementação dos cinco laboratórios interativos + store `laboratorio.js`).
