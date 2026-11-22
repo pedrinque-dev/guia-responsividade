@@ -1,0 +1,56 @@
+:root {
+  --color-ink: #171717;
+  --color-ink-soft: #3D3C38;
+  --color-paper: #F5F1E8;
+  --color-paper-alt: #ECE6D9;
+  --color-paper-bright: #FAF8F2;
+  --color-accent: #E87836;
+  --color-accent-dark: #B54F15;
+  --color-accent-tint: #F7E1D2;
+  --color-muted: #A6A49D;
+  --color-muted-text: #595751;
+  --color-rule: #CFC9BC;
+  --color-rule-strong: #171717;
+  --color-code-bg: #1B1B19;
+  --color-code-surface: #262623;
+  --color-code-ink: #F2EEE4;
+  --color-code-muted: #A6A49D;
+  --color-danger: #B83521;
+  --color-danger-tint: #F8DFDA;
+  --color-success: #216645;
+  --color-success-tint: #DAECE2;
+
+  --font-display: 'Archivo Black', 'Space Grotesk', system-ui, sans-serif;
+  --font-heading: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, SFMono-Regular, Consolas, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-md: 1.125rem;
+  --text-lg: 1.375rem;
+  --text-xl: 1.75rem;
+  --text-2xl: 2.25rem;
+  --text-3xl: 3rem;
+  --text-display: clamp(2.125rem, 6vw, 4.25rem);
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+
+  --sidebar-width: 17.5rem;
+  --header-height: 3.75rem;
+  --content-max: 58rem;
+  --border-thin: 1px solid var(--color-rule);
+  --border-strong: 2px solid var(--color-rule-strong);
+  --transition-fast: 150ms ease;
+  --transition-base: 220ms ease;
+}
