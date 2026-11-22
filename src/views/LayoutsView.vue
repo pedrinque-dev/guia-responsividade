@@ -3,6 +3,7 @@ import CodeExample from '@/components/CodeExample.vue'
 import GuidingQuestion from '@/components/GuidingQuestion.vue'
 import ReferenceList from '@/components/ReferenceList.vue'
 import SectionNavigation from '@/components/SectionNavigation.vue'
+import GridBuilderLab from '@/components/labs/GridBuilderLab.vue'
 
 const flexboxCodeLines = [
   { code: '.barra-acoes {', note: 'Flexbox controla o alinhamento em uma dimensão (linha ou coluna).' },
@@ -154,6 +155,8 @@ const sources = [
         :lines="gridCodeLines"
       />
     </section>
+
+    <GridBuilderLab />
 
     <GuidingQuestion
       number="03"

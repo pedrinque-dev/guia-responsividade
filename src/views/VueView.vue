@@ -3,6 +3,7 @@ import CodeExample from '@/components/CodeExample.vue'
 import GuidingQuestion from '@/components/GuidingQuestion.vue'
 import ReferenceList from '@/components/ReferenceList.vue'
 import SectionNavigation from '@/components/SectionNavigation.vue'
+import VueKeyLab from '@/components/labs/VueKeyLab.vue'
 
 const vueComponentLines = [
   { code: '<script setup>', note: 'Composition API enxuta com melhor organização de lógica por responsabilidade.' },
@@ -202,6 +203,8 @@ const sources = [
         :lines="vueRouterLazyLines"
       />
     </section>
+
+    <VueKeyLab />
 
     <GuidingQuestion
       number="05"

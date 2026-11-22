@@ -3,6 +3,7 @@ import CodeExample from '@/components/CodeExample.vue'
 import GuidingQuestion from '@/components/GuidingQuestion.vue'
 import ReferenceList from '@/components/ReferenceList.vue'
 import SectionNavigation from '@/components/SectionNavigation.vue'
+import ImageLab from '@/components/labs/ImageLab.vue'
 
 const responsiveImgHtmlLines = [
   { code: '<img', note: '' },
@@ -172,6 +173,8 @@ const sources = [
         :lines="responsiveImgCssLines"
       />
     </section>
+
+    <ImageLab />
 
     <GuidingQuestion
       number="04"

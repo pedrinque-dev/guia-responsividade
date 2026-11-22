@@ -3,6 +3,7 @@ import CodeExample from '@/components/CodeExample.vue'
 import GuidingQuestion from '@/components/GuidingQuestion.vue'
 import ReferenceList from '@/components/ReferenceList.vue'
 import SectionNavigation from '@/components/SectionNavigation.vue'
+import UnitsLab from '@/components/labs/UnitsLab.vue'
 
 const unitsTable = [
   {
@@ -172,6 +173,8 @@ const sources = [
         :lines="unitsCodeLines"
       />
     </section>
+
+    <UnitsLab />
 
     <GuidingQuestion
       number="02"

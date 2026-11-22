@@ -3,6 +3,7 @@ import CodeExample from '@/components/CodeExample.vue'
 import GuidingQuestion from '@/components/GuidingQuestion.vue'
 import ReferenceList from '@/components/ReferenceList.vue'
 import SectionNavigation from '@/components/SectionNavigation.vue'
+import ViewportLab from '@/components/labs/ViewportLab.vue'
 
 const htmlViewportLines = [
   { code: '<head>', note: 'Cabeçalho do documento onde ficam metadados lidos antes da renderização.' },
@@ -159,6 +160,8 @@ const sources = [
         :lines="mobileFirstCssLines"
       />
     </section>
+
+    <ViewportLab />
 
     <GuidingQuestion
       number="01"
