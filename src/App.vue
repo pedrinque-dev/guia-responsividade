@@ -95,7 +95,7 @@ onBeforeUnmount(() => {
   width: 100%;
   max-width: var(--content-max);
   margin: 0 auto;
-  padding: var(--space-4);
+  padding: var(--space-4) var(--space-4) 4.75rem;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -104,7 +104,7 @@ onBeforeUnmount(() => {
 
 .page-fade-enter-active,
 .page-fade-leave-active {
-  transition: opacity 160ms ease;
+  transition: opacity 140ms ease;
 }
 
 .page-fade-enter-from,
@@ -118,7 +118,7 @@ onBeforeUnmount(() => {
   }
 
   .app-footer__inner {
-    padding: var(--space-5) var(--space-8);
+    padding: var(--space-5) 13rem var(--space-5) var(--space-8);
   }
 }
 
@@ -132,7 +132,7 @@ onBeforeUnmount(() => {
   }
 
   .app-footer__inner {
-    padding: var(--space-5) var(--space-10);
+    padding: var(--space-5) 13rem var(--space-5) var(--space-10);
   }
 }
 </style>

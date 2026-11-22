@@ -32,9 +32,23 @@ Registro progressivo das etapas concluídas no desenvolvimento do **Guia de Resp
   - Implementação completa dos cinco laboratórios funcionais: `ViewportLab.vue`, `UnitsLab.vue`, `GridBuilderLab.vue`, `ImageLab.vue` e `VueKeyLab.vue` (com `AnimalNoteRow.vue`).
 
 ## Etapa 05 — Desafio Final e Integração de API
-- **Status:** Concluída
+- **Status:** Concluída (`3cb7a1f` enviado para `origin/main`)
 - **Atividades realizadas:**
   - Implementação do serviço `src/services/api.js` consumindo a API pública Picsum Photos (`https://picsum.photos/v2/list`) com timeout via `AbortController`, geração real de `srcset` e catálogo de fallback SVG local.
-  - Criação do componente `src/components/ApiMediaShowcase.vue` acoplado à Seção 04 (`ImagensView.vue`) com estados de carregamento (skeletons), erro, troca de lote e botão para simular falha de rede e validar o fallback.
-  - Implementação do Desafio Final interativo em `src/views/DesafioView.vue`, exigindo o uso dos laboratórios e conceitos do guia, com protótipo que repara visualmente após o envio e gabarito fundamentado liberado somente após a tentativa do usuário.
-- **Pendências:** Avançar para a Etapa 06 (Testes reais em navegador nas larguras 320px, 375px, 430px, 768px, 1024px e 1440px, revisão de acessibilidade, console e README.md) e Etapa 07 (Configuração de publicação SPA e validação final).
+  - Criação do componente `src/components/ApiMediaShowcase.vue` acoplado à Seção 04 (`ImagensView.vue`) com estados de carregamento, erro, troca de lote e botão para simular falha de rede e testar o fallback.
+  - Implementação do Desafio Final interativo em `src/views/DesafioView.vue`, com protótipo em inspeção, validação antes do envio, reparo visual após resposta e gabarito fundamentado.
+
+## Etapa 06 — Testes e Acabamento
+- **Status:** Concluída
+- **Atividades realizadas:**
+  - Auditoria automatizada em Chrome headless sobre o build de produção em **42 combinações** (7 rotas × 6 larguras: `320px`, `375px`, `430px`, `768px`, `1024px`, `1440px`) com **0 ocorrências de rolagem horizontal** e **0 erros no console**.
+  - Validação funcional real do menu mobile (`375px`), dos 5 laboratórios interativos (incluindo quebras exatas de `463px → 1 col`, `464px → 2 cols`, `704px → 3 cols` no CSS Grid, salto de CLS `0,285` vs `0,000`, consumo da API Picsum + fallback e reconciliação Vue sem/com `:key`) e do Desafio Final (`5/5`).
+  - Correções visuais a partir das capturas de tela: título display da capa em largura integral acima da composição de duas colunas (evitando colisão com o Diagrama 00 em `1440px`), margem de segurança no rodapé para o `ViewportBadge`, ajuste tipográfico da etiqueta da barra lateral, `ViewportBadge` recolhido por padrão em telas menores que `768px` e carregamento direto da `HomeView` para otimizar LCP mantendo as 6 rotas internas sob demanda.
+  - Elaboração completa do `README.md` em português e auditoria confirmando zero comentários no código-fonte e ausência do PDF no controle de versão Git.
+
+## Etapa 07 — Preparação para Publicação
+- **Status:** Concluída (pronto para deploy na Vercel ou Netlify)
+- **Atividades realizadas:**
+  - Configuração de fallback SPA para Vue Router em `vercel.json` (Vercel) e `public/_redirects` (Netlify), confirmada na saída `dist/_redirects`.
+  - Validação do build de produção (`npm run build`) e da pré-visualização (`npm run preview`) em navegador real.
+  - Observação: a publicação externa em conta Vercel/Netlify fica pronta para importação direta do repositório GitHub pela dupla, sem afirmar deploy externo não executado.

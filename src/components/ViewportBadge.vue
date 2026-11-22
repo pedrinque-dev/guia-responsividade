@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import { useGuiaStore } from '@/stores/guia'
 
 const guia = useGuiaStore()
-const collapsed = ref(false)
+const collapsed = ref(typeof window !== 'undefined' ? window.innerWidth < 768 : true)
 </script>
 
 <template>

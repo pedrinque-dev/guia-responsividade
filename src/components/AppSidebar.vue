@@ -193,6 +193,9 @@ onBeforeUnmount(() => {
 .sidebar-edition {
   margin-top: var(--space-3);
   color: var(--color-muted);
+  font-size: 0.6875rem;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
 }
 
 .sidebar-progress {

@@ -71,12 +71,13 @@ function isVisited(path) {
         <span class="mono-tag mono-tag--accent">VUE 3 · MOBILE-FIRST</span>
       </div>
 
+      <div class="cover-hero__masthead">
+        <h1 id="cover-title" class="cover-title">Guia de Responsividade</h1>
+        <p class="cover-subtitle">Manual de Campo para Desenvolvimento Web</p>
+      </div>
+
       <div class="cover-hero__layout">
         <div class="cover-hero__copy">
-          <h1 id="cover-title" class="cover-title">
-            Guia de<br />Responsividade
-          </h1>
-          <p class="cover-subtitle">Manual de Campo para Desenvolvimento Web</p>
           <p class="cover-intro">
             Um guia técnico e interativo pensado para explicar, testar no navegador e demonstrar como
             interfaces se adaptam de 320px a 1440px sem quebrar leitura, desempenho ou acessibilidade.
@@ -304,10 +305,16 @@ function isVisited(path) {
   padding: var(--space-1) var(--space-3);
 }
 
+.cover-hero__masthead {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
 .cover-hero__layout {
   display: grid;
   grid-template-columns: 1fr;
-  gap: var(--space-8);
+  gap: var(--space-6);
   align-items: start;
 }
 
@@ -320,10 +327,11 @@ function isVisited(path) {
 
 .cover-title {
   font-family: var(--font-display);
-  font-size: var(--text-display);
-  line-height: 0.98;
+  font-size: clamp(1.625rem, 5.2vw, 3.65rem);
+  line-height: 1.02;
   text-transform: uppercase;
   letter-spacing: -0.02em;
+  overflow-wrap: break-word;
 }
 
 .cover-subtitle {
@@ -701,9 +709,9 @@ function isVisited(path) {
   }
 }
 
-@media (min-width: 80rem) {
+@media (min-width: 64rem) {
   .cover-hero__layout {
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.15fr);
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.25fr);
     align-items: stretch;
   }
 }
